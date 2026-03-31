@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apply for your Dream Job here</title>
+    <style>
+        /* Optional: Makes labels look consistent */
+        td { padding: 8px; }
+        label { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h2>Apply for your Dream Job</h2>
+
+    <!-- FIXED: All fields must be INSIDE the <form> tag -->
+    <form onsubmit="alert('Form Submitted!'); return false;">
+        <table border="0">
+            <tr>
+                <td><label for="fname">First Name</label></td>
+                <td><input type="text" id="fname" placeholder="First Name" maxlength="15" required></td>
+            </tr>
+            <tr>
+                <td><label for="lname">Last Name</label></td>
+                <td><input type="text" id="lname" placeholder="Last Name" maxlength="15"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" id="email" required></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="tel" maxlength="10" id="Phone" required></td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td><input type="date" id="dob"></td>
+            </tr>
+            <tr>
+                <td><label for="position">Applied Position</label></td>
+                <td><input type="text" id="position"></td>
+            </tr>
+            <tr>
+                <td><label for="degree">Highest Degree</label></td>
+                <td>
+                    <select id="degree" name="degree">
+                        <option value="Masters">Masters</option>
+                        <option value="BE/B.Tech">BE/B.Tech</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="10">10th</option>   
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="City">Select City</label></td>
+                <td>
+                    <select id="City" name="city" required>
+                        <option value="" disabled selected hidden>Select your city</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Pune">Pune</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Serving Notice Period?</td>
+                <td>
+                    <!-- FIXED: Removed extra </label> tags and fixed name -->
+                    <input id="yes" type="radio" name="notice_period" value="yes"> <label for="yes">Yes</label>
+                    <input id="no" type="radio" name="notice_period" value="no"> <label for="no">No</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="days_to_join">How soon can you join?</label></td>
+                <td>
+                    <select id="days_to_join" name="day_to_join">
+                        <option value="immediate">Immediate</option>
+                        <option value="1months">1 month</option>
+                        <option value="2months">2 months</option>
+                        <option value="3months">3 months</option>   
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Preferred Interview Date</td>
+                <td><input type="date" id="interviewdate"></td>
+            </tr>
+            <tr>
+                <td>Resume</td>
+                <td><input type="file" id="Resume" accept=".pdf,.doc,.docx"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" id="terms" required> 
+                    <label for="terms">I Agree to <a href="https://www.google.com">T&C</a></label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <!-- FIXED: Removed double 'type' attribute -->
+                    <button type="submit">Submit Application</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
