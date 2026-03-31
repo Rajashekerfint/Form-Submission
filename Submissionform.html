@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Apply for your Dream Job here</title>
+    </head>
+    <body>
+       <h2>Apply for you dream Job</h2>
+       <form onsubmit="open()"></form>
+       <label for="fname">First Name</label><br>
+       <input type= "text" id="fname" placeholder="First Name" maxlength="15"></input><br>
+       <label for="lname">Last Name</label><input id="lname" placeholder="Last Name" maxlength="15"></input><br>
+       <label for="email">email</label><input type="email" id="email"><br>
+       Phone number<input type="tel" maxlength="10" id="Phone"><br>
+        date of Birth<input type="date"><br>
+        <label for="Position">Applied Position</label><input type="text" id="position"><br>
+        <label for="City" >select your city:</label>
+        <select id="City" name="city">
+            <option value="" >select your city</option>
+            <option value="Delhi" id="Delhi">Delhi</option>
+            <option value="Mumbai" id="Mumbai">Mumbai</option>
+            <option value="Hyderabad" id="Hyderabad">Hyderabad</option>
+            <option value="Chennai" id="Chennai">Chennai</option>
+            <option value="Bangalore" id="Bangalore">Bangalore</option>
+            <option value="Pune" id="Pune">Pune</option>
+        </select><br>
+        <label for="notice period">Serving Notice period?</label>
+        <label for="yes"><input id="yes" type="radio" name="Notice period"></label>Yes</label>
+        <label for="no"><input id="no" type="radio" name="Notice period"></label>No</label><br>
+        <label for="joining date" >how soon can you join</label>
+        <select id="no of days" name= "no of days">
+            <option value="immediate" id="immediate">immediate</option>
+            <option value="1 months" id="1months">1 months</option>
+            <option value="2 months" id="2months">2 months</option>
+            <option value="3 months" id="3months">3 months</option>   
+        </select><br>
+        Preferred Interview Date <input type="date" id="interviewdate"><br>
+        Resume <input type="file" id="Resume"><br>
+        <a href="https://www.google.com" id="t&c">T&C</a>
+        <label for="i agree to T&C">I Agree to Terms and Conditions</label>
+        <input type="checkbox"> <br>
+        <button type="button" type="submit">Submit</button>
+
+
+
+    </body>
+
+</html>
